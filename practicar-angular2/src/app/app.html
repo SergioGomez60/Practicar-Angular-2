@@ -1,0 +1,51 @@
+<h1>ngClass | Clases dinámicas</h1>
+<!-- Crea dos clases CSS: highlight (fondo amarillo) y italic (texto en cursiva).
+
+Crea dos variables booleanas en el componente: isHighlighted y isItalic.
+
+Crea dos botones que cambien cada una de las variables al hacer clic.
+
+Aplica ngClass a un <p> para que cambie entre las clases dinámicamente según el estado de las variables. -->
+
+<!-- <p [ngClass]="{highlight:isHighlighted, italic:isItalic}"> Hola cebollita</p>
+
+<button (click)="cambioHighlight()">Fondo amarillo</button> <button (click)="cambioItalic()">Italic</button> -->
+
+<h1>Formularios Reactivos</h1>
+
+<!-- Crea un formulario reactivo llamado carForm con los campos: brand, model y year.
+
+Inicializa cada campo con un FormControl en el constructor.
+
+Muestra el formulario en el HTML con sus respectivos input.
+
+Al enviar el formulario, muestra los valores en consola. -->
+<!-- <app-child></app-child> -->
+
+<h1>Formularios Reactivos + Validators</h1>
+<!-- Crea un formulario userForm con los campos: username, email, y age.
+
+Aplica validadores:
+
+username: obligatorio.
+
+email: obligatorio y con formato de email.
+
+age: obligatorio y máximo 100.
+
+Muestra mensajes de error debajo de cada campo si la validación falla. -->
+<app-child></app-child>
+
+<h1>Services | Instancias Globales - Singleton</h1>
+<!-- Crea un servicio llamado UserService.
+
+En él, define una interfaz User con propiedades: name, email, y loggedIn.
+
+Declara una variable user del tipo User e inicialízala en el constructor.
+
+Crea un método loginUser(name: string, email: string) que cambie los valores del usuario y loggedIn a true.
+
+Inyecta el servicio en un componente hijo y muestra el nombre y estado de loggedIn.
+
+Añade un botón que llame al método loginUser con datos nuevos desde el HTML. -->
+<app-child></app-child>

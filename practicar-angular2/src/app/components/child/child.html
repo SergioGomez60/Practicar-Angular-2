@@ -1,0 +1,39 @@
+<!-- <form [formGroup]="carForm">
+    <label for="marca">Marca de coche</label>
+    <input type="text" name="marca" id="marca" formControlName="marca">
+
+    <label for="modelo">Modelo de coche</label>
+    <input type="text" name="modelo" id="modelo" formControlName="modelo">
+
+    <label for="anyo">Año de coche</label>
+    <input type="text" name="anyo" id="anyo" formControlName="anyo">
+
+    <button (click)="enviarPelicula()">Enviar pelicula</button>
+</form> -->
+
+<!-- <form [formGroup]="userForm" class="formulario">
+    <label for="username">Username</label>
+    <input type="text" id="username" formControlName="username">
+    @if(username.invalid && username.touched){
+        <p>El usuario es requerido</p>
+    }
+
+    <label for="email">Email</label>
+    <input type="text" id="email" formControlName="email">
+    @if(email.invalid && email.touched){
+        <p>El email es requerido</p>
+    }@else if(email.hasError("email")){<p>El email no es valido</p>}
+
+    <label for="age">Age</label>
+    <input type="number" id="age" formControlName="age">
+    @if(age.invalid && age.touched){
+        <p>La edad es requerida</p>
+    }@else if(age.hasError("max")){<p>La edad no puede ser superior a 100</p>}
+
+    <button [disabled]="userForm.invalid">Enviar</button>
+
+</form> -->
+
+<p>{{ userService.user.name }}</p>
+<p>{{ userService.user.loggedIn }}</p>
+<button (click)="userService.loginUser('Sara','sara@gmail.com')">Cambiar nombre</button>
