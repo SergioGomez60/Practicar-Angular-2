@@ -1,0 +1,9 @@
+.usuarios{
+    display: flex;
+    background-color: yellow;
+    gap: 50px;
+}
+.usuarios:hover{
+    background-color: black;
+    color: whitesmoke;
+}

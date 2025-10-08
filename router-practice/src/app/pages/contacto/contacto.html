@@ -1,1 +1,11 @@
 <p>contacto works!</p>
+
+@for (usuario of usuarios.usuarios; track $index){
+    <a [routerLink]="usuario.nombre">
+    <div class="usuarios">
+        <p>{{ usuario.nombre }}</p>
+        <p>{{ usuario.apellido }}</p>
+        <p>{{ usuario.edad }}</p>
+    </div>
+    </a>
+}
