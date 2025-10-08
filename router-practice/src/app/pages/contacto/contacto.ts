@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../../services/usuario';
 import { RouterLink } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './contacto.html',
   styleUrl: './contacto.css'
 })
-export class Contacto {
+export class Contacto{
   constructor(public usuarios:UsuarioService){
     
   }
